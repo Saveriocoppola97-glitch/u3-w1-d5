@@ -28,14 +28,16 @@ class MainSection extends Component {
     return (
       <div className="container-fluid px-4 my-3">
         <h3 className="text-white mb-3">{this.props.title}</h3>
-        <div className="row">
+        <div className="row justify-content-center">
           {this.state.allFilm.slice(0, 6).map((film) => (
-            <div className="col-6 col-md-4 col-lg-2" key={film.imdbID}>
+            <div
+              className="col-xs-12 col-sm-6 col-md-4 col-lg-2 "
+              key={film.imdbID}
+            >
               <img
                 src={film.Poster}
                 alt={film.Title}
-                className="img-fluid"
-                style={{ width: "200px", height: "300px" }}
+                className="img-fluid movie-card"
               />
             </div>
           ))}

@@ -1,4 +1,5 @@
 import NavBar from "./components/NavBar";
+import FooterNtx from "./components/FooterNtx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/style.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -17,7 +18,9 @@ function App() {
         <MainSection title="Watch it Again" query="harry potter" />
         <MainSection title="New Releases" query="star wars" />
       </main>
-      <footer></footer>
+      <footer>
+        <FooterNtx />
+      </footer>
     </body>
   );
 }
